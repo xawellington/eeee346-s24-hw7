@@ -8,7 +8,7 @@ bool testEncode(shared_ptr<Cipher> cipher, string msg) {
   bool status = true;
   myFile << "Encoding message using " << cipher->getCipherName() << " Cipher encoder!" << endl;
 
-  // attempt encode
+  // attempt to encode
   // this uses polymorphism. cipher is a shared pointer of the abstract base class Cipher
   // however, it calls the encode function of the derived concrete class in which it points
   if (cipher->encode(msg)) {
@@ -26,7 +26,7 @@ bool testDecode(shared_ptr<Cipher> cipher, string msg) {
   bool status = true;
   myFile << "Decoding message using " << cipher->getCipherName() << " Cipher decoder!" << endl;
 
-  // attempt decode
+  // attempt to decode
   // this uses polymorphism. cipher is a shared pointer of the abstract base class Cipher
   // however, it calls the decode function of the derived concrete class in which it points
   if (cipher->decode(msg)) {

@@ -15,7 +15,6 @@ public:
    */
   /*TODO: write your code*/
 
-
   /*
    * decode(): abstract (pure virtual) function for decoding
    * @param encodedMsg - encoded message that requires decoding

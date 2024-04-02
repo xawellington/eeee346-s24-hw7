@@ -20,34 +20,33 @@ int main() {
   // result variable
   bool actionStatus;
 
-  // shared pointer to abstract base class cipher
+  // shared pointer to an abstract base class cipher
   shared_ptr<Cipher> cipher;
 
   // request name for the cipher to use
   cin >> cipherName;
 
-  // use string compar() to know which cipher to setup
-  if(cipherName.compare(CaesarCipher::CIPHER_NAME) == 0) {
+  // use string compare() to know which cipher to setup
+  if (cipherName.compare(CaesarCipher::CIPHER_NAME) == 0) {
     // requested Caesar cipher, it needs a shift value
     int shift;
         
     // get shift value
     cin >> shift;
 
-    // setup Polymorphism
+    // setup polymorphism
     // assign a shared pointer to point to a concrete derived class of type CaesarCipher
     cipher = make_shared<CaesarCipher>(shift);
-  } else if(cipherName.compare(AutokeyCipher::CIPHER_NAME) == 0) {
+  } else if (cipherName.compare(AutokeyCipher::CIPHER_NAME) == 0) {
     // requested Autokey cipher, it requires a char key
     string key;
 
     // get the key
     cin >> key;
 
-    // setup Polymorphism
+    // setup polymorphism
     // assign shared pointer to point to a concrete derived class of Type AutokeyCipher
     cipher = make_shared<AutokeyCipher>(key);
-
   } else {
     cout << "Bad cipher name ( " << cipherName << " )" << endl;
     return -1;
@@ -65,7 +64,7 @@ int main() {
   // request for message
   getline(cin >> ws, msg); // >> ws: to extract and discard any leading whitespace characters
 
-  // based on action, perform encode or decode
+  // based on action, perform encoding or decoding
   if (action.compare(ACTION_ENCODE) == 0) {
     actionStatus = testEncode(cipher, msg);
   } else if (action.compare(ACTION_DECODE) == 0) {
@@ -75,7 +74,7 @@ int main() {
     return -1;
   }
 
-  // attempt to print out the details of Abstract Base Class Cipher
+  // attempt to print out the details of the abstract base class
   if (!actionStatus || !printCipherDetails(cipher)) {
     return -1;
   }

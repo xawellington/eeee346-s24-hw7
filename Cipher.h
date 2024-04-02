@@ -23,7 +23,6 @@ public:
   /*TODO: write your code*/
 
   /*
-   *
    * isValidCharacter(): abstract helper function (pure virtual) to check if a character is valid for a cipher
    * @param c - character to check
    * @return true if character may be used in the cipher
@@ -39,7 +38,7 @@ public:
 
 protected:
   /*
-   * constrcutor that sets the Cipher name but may only be called by derived classes
+   * constructor that sets the Cipher name but may only be called by derived classes
    * @param name - name to set for cipherName
    */
   Cipher(string name) : cipherName(name) {}

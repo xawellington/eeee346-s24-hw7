@@ -31,7 +31,7 @@ public:
    * for this implementation capital A-Z or a space are only valid
    * ASCII representation of A-Z are decimal numbers 65-90
    * @param c - character to check
-   * @return - true is character is A-Z or space otherwise false
+   * @return - true if character is A-Z or space otherwise false
    */
   bool isValidCharacter(char c);
 

@@ -1,0 +1,5 @@
+Encoding message using Autokey Cipher encoder!
+Encoded Message is:
+XZB
+Details for Cipher Used:
+Autokey Cipher used a key of ABC

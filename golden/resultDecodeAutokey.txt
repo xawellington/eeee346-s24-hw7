@@ -1,0 +1,5 @@
+Decoding message using Autokey Cipher decoder!
+Decoded Message is:
+THE INNER MACHINATIONS OF MY MIND ARE AN ENIGMA
+Details for Cipher Used:
+Autokey Cipher used a key of MILK

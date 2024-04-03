@@ -8,7 +8,7 @@ using namespace std;
 // abstract base class
 class Cipher {
 public:
-	/*
+  /*
    * encode(): abstract (pure virtual) function for encoding
    * @param decodedMsg - original message that requires encoding
    * @return true if encode was successful

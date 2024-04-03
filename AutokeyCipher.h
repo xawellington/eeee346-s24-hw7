@@ -12,7 +12,7 @@ public:
    */
   AutokeyCipher(string primer);
   
-	/**
+ /**
    * performs Autokey encoding of a message
    * @param decodedMsg - string message to encode
    * @return true if encoding is successful else false

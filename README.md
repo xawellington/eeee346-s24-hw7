@@ -26,6 +26,8 @@ Furthermore, the main function (provided) demonstrates polymorphism by using a b
 
 The Caesar cipher is a simple substitution cipher that replaces a letter with another letter by shifting it by a fixed number of positions.
 
+![caesar_cipher](https://github.com/sskeme/eeee346-s24-hw7/assets/154963758/4c61f52f-88b0-403d-a462-455ed5eae53b)
+
 See https://en.wikipedia.org/wiki/Caesar_cipher for more complete information.
 
 For this homework assignment, the pseudocode is provided to help you.
@@ -33,6 +35,8 @@ For this homework assignment, the pseudocode is provided to help you.
 # Autokey Cipher
 
 The autokey cipher is a polyalphabetic substitution cipher that uses a key to encode/decode a message. The cipher appends a primer to the message to create a key which is then used to securely encode the given message.
+
+![autokey_cipher](https://github.com/sskeme/eeee346-s24-hw7/assets/154963758/2cff6001-c7f3-497f-be34-10eaba433769)
 
 See https://en.wikipedia.org/wiki/Autokey_cipher for more information.
 
